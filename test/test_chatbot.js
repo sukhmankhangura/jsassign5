@@ -19,3 +19,14 @@ it('should return "Sorry, I don\'t understand." when message is not understood',
 
     expect(result).to.equal('Sorry, I don\'t understand.')
 })
+it('should return "How are you?" when message is hi', function () {
+  var result = chatbot('hi')
+
+  expect(result).to.equal('How are you?')
+})
+
+it('should return "You\'re welcome." when message is thanks', function () {
+  var result = chatbot('thanks')
+
+  expect(result).to.equal('You\'re welcome.')
+})
