@@ -30,3 +30,15 @@ it('should return "You\'re welcome." when message is thanks', function () {
 
   expect(result).to.equal('You\'re welcome.')
 })
+
+it('should return "No age" when message is how old are you', function () {
+    var result = chatbot('how old are you?')
+
+    expect(result).to.equal('no age')
+})
+
+it('should return "yes" when message is do you understand 0and 1', function () {
+    var result = chatbot('do you understand 0 and 1')
+
+    expect(result).to.equal('yes')
+})
